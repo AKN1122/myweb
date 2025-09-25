@@ -99,7 +99,10 @@ a{
       transform:translateZ(0);
       transition:transform .28s, box-shadow .28s;
       background:linear-gradient(135deg, rgba(255,255,255,0.01), rgba(255,255,255,0.006));
-      border:1px solid rgba(255,255,255,0.02);
+      border:3px solid rgba(0,0,0,0.2);
+    }
+.thumb > img{
+        filter: blur(8px);
     }
     .proj:hover{
         transform:translateY(-8px) rotateX(3deg);
@@ -482,4 +485,5 @@ footer{
     padding: 10px;
     display: flex;
     justify-content: center;
+
 }
