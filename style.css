@@ -408,8 +408,6 @@ h2{
 }
 .muneeb{
     color: blueviolet;
-    -webkit-text-stroke: 1px #181824;
-    
 }
 .typewriter {
     display: inline-block;
@@ -491,6 +489,7 @@ footer{
     justify-content: center;
 
 }
+
 
 
 
