@@ -122,14 +122,14 @@ a{
     .proj h3{
         margin:8px 0 0 0;
         font-size:14px
-        position:relative;
-        z-index:100;
+        position: relative;
+        z-index: 100;
     }
     .proj p{
         margin:6px 0 0 0;
         font-size:12px
-        position:relative;
-        z-index:100;
+        position: relative;
+        z-index: 100;
     }
 
 .png{
@@ -491,4 +491,5 @@ footer{
     justify-content: center;
 
 }
+
 
