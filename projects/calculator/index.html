@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="calc-body">
+        <div class="screen">
+            <input type="text"class="display" id="display" readonly>
+        </div>
+        <div class="buttons">
+            <div class="col col1">
+                <div class="buttonAC"><button onclick="clearDisplay()">AC</button></div>
+                <div class="button7"><button  onclick="append('7')">7</button></div>
+                <div class="button4"><button  onclick="append('4')">4</button></div>
+                <div class="button1"><button  onclick="append('1')">1</button></div>
+                <div class="button00"><button onclick="append('00')">00</button></div>
+            </div>
+            <div class="col col2">
+                <div class="button%"><button onclick="append('%')">%</button></div>
+                <div class="button8"><button onclick="append('8')">8</button></div>
+                <div class="button5"><button onclick="append('5')">5</button></div>
+                <div class="button2"><button onclick="append('2')">2</button></div>
+                <div class="button0"><button onclick="append('0')">0</button></div>
+            </div>
+            <div class="col col3">
+                <div class="buttonX"><button onclick="deleteChar()">C</button></div>
+                <div class="button9"><button onclick="append('9')">9</button></div>
+                <div class="button6"><button onclick="append('6')">6</button></div>
+                <div class="button3"><button onclick="append('3')">3</button></div>
+                <div class="button."><button onclick="append('.')">.</button></div>
+            </div>
+            <div class="col col4">
+                <div class="button/"><button onclick="append('/')">/</button></div>
+                <div class="button*"><button onclick="append('*')">X</button></div>
+                <div class="button-"><button onclick="append('-')">-</button></div>
+                <div class="button+"><button onclick="append('+')">+</button></div>
+                <div class="button="><button onclick="calculate()">=</button></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

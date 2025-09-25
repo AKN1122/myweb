@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description"
+      content="Muneeb Niazi Portfolio - Web Developer, UI Designer & Freelancer creating responsive websites using HTML, CSS, and JavaScript.">
+   <title>Muneeb Niazi | Web Developer & Designer Portfolio</title>
+   <link rel="stylesheet" href="style.css">
+   <link rel="shortcut icon" href="assets/svgs/crown.svg" type="image/x-icon">
+</head>
+
+<body>
+   <div id="contactForm" popover="manual">
+        <button popovertargetaction="contactForm" popovertarget="contactForm" class="close-btn">❌</button>
+        <h2 id="cf">Contact Form</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea rows="4" placeholder="Your Message" required></textarea>
+            <button class="submit" type="submit">Send</button>
+        </form>
+    </div>
+   <header>
+      <div id="progress-bar"></div>
+      <nav class="navbar">
+         <div class="logo">
+            <h2>PORTFOLIO</h2>
+         </div>
+         <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+         </ul>
+         <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+         </div>
+      </nav>
+   </header>
+
+   <main>
+      <div class="hero">
+         <section class="sec1">
+            <div class="name">
+               <h1>Hi! I'm <span class="muneeb">Muneeb</span></h1>
+            </div>
+            <div class="a-text">
+               <h2>I am a&nbsp;<br>
+                  <span class="typewriter"></span>
+               </h2>
+            </div>
+            <p class="para">
+               We build brands, websites and digital experiences with intention, care and clarity.
+            </p>
+            <div class="button">
+               <button popovertarget="contactForm">Let's TALK</button>
+               <div class="line"></div>
+            </div>
+            <div class="info">
+               <div class="col col1">
+                  <div class="number">5+ PROJECTS</div>
+                  <div class="txt">Clean and responsive design</div>
+               </div>
+               <div class="seperator"></div>
+               <div class="col col2">
+                  <div class="number">7+ SKILLS</div>
+                  <div class="txt">Highly appreciated and modern</div>
+               </div>
+               <div class="seperator"></div>
+               <div class="col col3">
+                  <div class="number">2+ YEAR EXPERIENCE</div>
+                  <div class="txt">Comfortable with intermediate coding</div>
+               </div>
+            </div>
+         </section>
+         <section class="sec2">
+            <div class="pic">
+               <div class="cloud cloud1">Your Growth, Our Mission</div>
+               <img src="assets/images/s1.jpg" alt="Profile Pic">
+               <div class="cloud cloud2">We Build Your Success</div>
+            </div>
+         </section>
+      </div>
+      </div>
+      <div class="details">
+         <h1 id="skills">My Skills</h1>
+         <section class="sec3">
+            <div class="tag-list">
+               <div class="inner">
+                  <div class="tag box box1"><img class="png png1" src="assets/images/HTML.png" alt="HTML"></div>
+                  <div class="tag box box2"><img class="png png2" src="assets/images/CSS.png" alt="CSS"></div>
+                  <div class="tag box box3"><img class="png png3" src="assets/images/JS.png" alt="JS"></div>
+                  <div class="tag box box1"><img class="png png4" src="assets/images/FIGMA.png" alt="FIGMA"></div>
+                  <div class="tag box box2"><img class="png png5" src="assets/images/TAILWIND.png" alt="TAILWIND">
+                  </div>
+                  <div class="tag box box3"><img class="png png6" src="assets/images/GITHUB.png" alt="GITHUB"></div>
+                  <div class="tag box box1"><img class="png png1" src="assets/images/HTML.png" alt="HTML"></div>
+                  <div class="tag box box2"><img class="png png2" src="assets/images/CSS.png" alt="CSS"></div>
+                  <div class="tag box box3"><img class="png png3" src="assets/images/JS.png" alt="JS"></div>
+                  <div class="tag box box1"><img class="png png4" src="assets/images/FIGMA.png" alt="FIGMA"></div>
+                  <div class="tag box box2"><img class="png png5" src="assets/images/TAILWIND.png" alt="TAILWIND">
+                  </div>
+                  <div class="tag box box3"><img class="png png6" src="assets/images/GITHUB.png" alt="GITHUB"></div>
+               </div>
+               <div class="fade"></div>
+            </div>
+         </section>
+         <h1 id="about">About</h1>
+         <section class="sec4">
+            <div class="glass-card">
+               <h1>Welcome</h1>
+               <p>I'm Muneeb Niazi, a passionate Front-End Developer and UI Designer. I specialize in building clean,
+                  responsive, and interactive websites using HTML, CSS, and JavaScript. Currently, I'm learning advanced
+                  web development and freelancing to bring creative digital ideas to life.</p>
+               <br><br>
+               <button class="learnBtn">Learn More</button>
+            </div>
+      </div>
+      </section>
+            <section id="projects" class="card">
+        <h2 id="projectsTitle">Projects</h2>
+        <div style="margin:8px 0 16px 0;">Click a project to view details.</div>
+
+        <div class="projects-grid" id="projectsGrid">
+          
+          <article class="proj">
+            <a target="_blank" href="projects/Tik Tak Toe/TikTakToe.html">
+            <div class="thumb"><img src="assets/images/TicTacToe.PNG" alt="tictactoe"></div>
+            <h3>Tictac Toe — A fun play game </h3>
+            <p class="muted-small">Small interactive game with efficient rendering.</p>
+            </a>
+          </article>
+
+          <article class="proj">
+            <a target="_blank" href="projects/To Do List/index.html">
+            <div class="thumb"><img src="assets/images/ToDo.PNG" alt="todolist"></div>
+            <h3>To-Do List — A single platform to assemble all your tasks</h3>
+            <p class="muted-small">Handcrafted semantic HTML & optimized metadata for discoverability.</p>
+            </a>
+          </article>
+
+          <article class="proj">
+            <a target="_blank" href="projects/calculator/index.html">
+            <div class="thumb"><img src="assets/images/calculator.PNG" alt="ca;lculator"></div>
+            <h3> Claculator — Single input interactive design</h3>
+            <p class="muted-small">A simple looking but very modern project for practicing JavaScript.</p>
+            </a>
+          </article>
+
+          <article class="proj">
+            <a target="_blank" href="projects/digital clock/index.html">
+            <div class="thumb"><img src="assets/images/DigitalClock.PNG" alt="digitalclock"></div>
+            <h3>Digital Clock — A dark and interactive theme clock </h3>
+            <p class="muted-small">UI playground: parallax, animated components and performance-first design.</p>
+            </a>
+          </article>
+
+          <article class="proj">
+            <a target="_blank" href="projects/analog clock/analog.html">
+            <div class="thumb"><img src="assets/images/analogClock.PNG" alt="analogclock"></div>
+            <h3>Analog Clock — A traditonal way of knowing time</h3>
+            <p class="muted-small">Designed with accessibility and speed in mind.</p>
+            </a>
+          </article>
+
+          <article class="proj">
+            <a target="_blank" href="projects/toggle light bulb/bulb.html">
+            <div class="thumb"><img src="assets/images/bulb.PNG" alt="analogclock"></div>
+            <h3>Toogle Light Bulb — A simple but important project</h3>
+            <p class="muted-small">Begginer friendly project to learn about toggle dark mode.</p>
+            </a>
+          </article>
+
+          <article class="proj">
+            <a target="_blank" href="projects/random mcq picker/index.html">
+            <div class="thumb"><img src="assets/images/mcqs.PNG" alt="analogclock"></div>
+            <h3>Random MCQs Picker — A simplest way to practice JS</h3>
+            <p class="muted-small">A simple project to learn about JavaScript math functionality.</p>
+            </a>
+          </article>
+
+        </div>
+      </section>
+      <section class="sec5">
+         <div class="contact">
+            <button popovertarget="contactForm" class="contactBtn">Contact Me</button>
+            <div class="line"></div>
+         </div>
+      </section>
+   </main>
+
+   <footer>
+      <p>&copy; Copyright NiaziMuneeb All Rights Reserved</p>
+   </footer>
+
+   <script src="script.js"></script>
+</body>
+
+</html>

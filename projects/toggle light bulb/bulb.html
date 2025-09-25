@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  .all{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(37, 37, 37);
+  }
+.container{
+  background-color: peachpuff;
+
+}
+
+  .light {
+    display: flex;
+    /* transform: rotate(5deg); */
+    justify-content: center;
+    align-items: center;
+    animation: rotate infinite   alternate-reverse ;
+  }
+  
+  @keyframes rotate {
+    0%{rotate: 10deg;}
+    100%{rotate: -10deg;}
+  }
+
+  .wire {
+    border: 5px solid black;
+    position: relative;
+    height: 310px;
+    /* top: 50px; */
+    left: 154px;
+  }
+
+  .holder {
+    overflow: hidden;
+    /* border: 2px solid black; */
+    height: 60px;
+    width: 50px;
+    position: relative;
+    top: 190px;
+    background-color: rgb(53, 53, 53);
+    left: 125px;
+  }
+
+  .circle {
+    background-color: rgb(84, 84, 84);
+    position: relative;
+    border: 1px solid black;
+    top: 300px;
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+    overflow: hidden;
+  }
+
+  .bulb {
+    box-shadow: 0px 0px 50px yellow;
+    background-color: rgb(255, 255, 70);
+    border: none;
+  }
+
+  .btn {
+    padding: 20px;
+    border-radius: 50px;
+    border: 1px solid black;
+  }
+
+  .btn:hover {
+    background: gray;
+  }
+</style>
+
+<body>
+  <div class="all container">
+    <div class="light">
+    <div class="wire"></div>
+    <div class="holder"></div>
+    <div class="glass">
+
+      <div class="bulb circle"></div>
+    </div>
+
+  </div>
+  <button class="btn">On/Off</button>
+  </div>
+  <script>
+    let button = document.querySelector(".btn")
+    button.onclick = () => {
+      document.querySelector(".circle").classList.toggle("bulb")
+      document.querySelector(".all").classList.toggle("container")
+    }
+
+  </script>
+</body>
+
+</html>

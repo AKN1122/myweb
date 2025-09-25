@@ -1,0 +1,110 @@
+body{
+    background: #e0e5ec;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.restart{
+    border: none;
+    background: #e0e5ec;
+    border-radius: 20px;
+    box-shadow: 9px 9px 16px #a3b1c6, -0px -9px 16px #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.25rem;
+    padding: 15px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    margin-top: 20px;
+}
+.restart:hover{
+    transform: scale(1.05);
+    box-shadow: inset 9px 9px 16px #a3b1c6, -9px -9px 16px #ffffff;
+}
+h1{
+    font-family: sans-serif;
+    font-weight: 1000;
+    font-size: 8vh;
+    color: #232323;
+    text-shadow:0 0 15px #8d98a8;
+}
+.board{
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3,100px);
+    gap: 20px;
+}
+.cell{
+    background: #e0e5ec;
+    border-radius: 20px;
+    box-shadow: 9px 9px 16px #a3b1c6, -0px -9px 16px #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+.cell:hover{
+    transform: scale(1.05);
+    box-shadow: inset 9px 9px 16px #a3b1c6, -9px -9px 16px #ffffff;
+}
+.winner{
+    display: flex;
+    justify-content: center;
+    border-radius: 100px;
+    transition: all 1s ease-in-out;
+    color: #232323;
+    align-items: center;
+    font-weight: 900;
+    font-size: larger;
+    margin: 0;
+    height: 70px;
+    width: 300px;
+    margin-bottom: 50px;
+    text-shadow: 0 0 10px #8d98a8;
+}
+@media (max-width: 550px) {
+    .board{
+        grid-template-columns: repeat(3, 70px);
+        grid-template-rows: repeat(3, 70px);
+        gap: 15px;
+    }
+    .cell{
+        font-size: 1.5rem;
+    }
+    h1{
+        font-size: 2.5em;
+        color: #232323;
+    }
+    .restart{
+        transform:translateX(10px);
+    }
+}
+@media (max-height: 600px) {
+    body{
+        display: flex;
+        flex-flow: row;
+        gap: 50px;
+    }
+    .winner{
+        transform: translateY(25px);
+    }
+    .restart{
+        transform: translateX(10px);
+        font-size: 0.8rem;
+    }
+    .board{
+        grid-template-columns: repeat(3, 70px);
+        grid-template-rows: repeat(3, 70px);
+        gap: 15px;
+    }
+    .cell{
+        font-size: 1.5rem;
+    }
+}

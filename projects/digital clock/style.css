@@ -1,0 +1,33 @@
+*{margin: 0;padding: 0;}
+body{
+    box-shadow: 0 0 50px inset #000;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #353839;
+    color: #FFD700;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.time, .date{
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    border: 5px solid transparent;
+    box-shadow: 0 0 20px #000,0 0 20px inset #000 ;
+    height: 100px;
+    width: 500px;
+}
+.date{
+    width: 400px;
+    transform: translateX(50px);
+}
+.time:hover, .date:hover{
+    border: 5px solid #FFD700;
+    box-shadow:0 0 30px #FFD700,0 0 30px inset #FFD700 ;
+    transition: all 1s ease-out;
+    cursor:default;
+}
